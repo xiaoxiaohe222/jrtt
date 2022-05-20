@@ -1,24 +1,19 @@
 <template>
   <div id="app-container">
-    <div class="box"></div>
+    <div class="container">
+      <router-view></router-view>
+    </div>
+    <Footer style="background-color: white;" v-show="$route.meta.showFooter"></Footer>
   </div>
 </template>
-
 <script>
-
-
 export default {
   name: 'App',
-  components: {
-
-  }
 }
 </script>
 
 <style lang="less">
-.box{
-  width: 185px;
-  height: 100px;
-  background-color: #bfa;
+.container{
+  padding-bottom: 50px;
 }
 </style>
