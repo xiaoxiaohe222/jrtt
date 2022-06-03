@@ -11,6 +11,7 @@
             offset="50"
         >
           <ArticleItem
+              @click.native="$router.push(`/detail/${article.art_id}`)"
               v-for="article in articleList"
               :key="article.art_id"
               :articleItem="article"

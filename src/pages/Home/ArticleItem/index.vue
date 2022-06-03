@@ -29,7 +29,7 @@
             <span>{{articleItem.time}}</span>
           </div>
 <!--          关闭按钮-->
-          <i class="iconfont iconclose1" @click="$BUS.$emit('closeBtn')"></i>
+          <i class="iconfont iconclose1" @click="$BUS.$emit('closeBtn',articleItem)"></i>
         </div>
       </template>
     </van-cell>
@@ -82,6 +82,7 @@ export default {
 }
 .van-cell__label{
   margin-top: 10px;
+  padding-right: 10px;
 }
 .imgs .on{
   margin: 0 10px;
